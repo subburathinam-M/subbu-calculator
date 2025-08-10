@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +11,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Glitch Effect Name Button -->
+    Glitch Effect Name Button
     <a class="btn-glitch-fill" href="javascript:void(0)" aria-label="Subburathinam Calculator">
         <span class="text">Subburathinam Calculator</span>
         <span class="text-decoration"> _</span>
         <span class="decoration">⇒</span>
     </a>
 
-    <!-- Main Calculator Container -->
+    Main Calculator Container
     <main class="calculator">
         <h1>📱 Smart Calculator</h1>
         
-        <!-- Input Fields -->
+        Input Fields
         <input type="number" 
                step="any" 
                id="num1" 
@@ -35,7 +36,7 @@
                placeholder="Enter second number" 
                aria-label="Second number">
 
-        <!-- Operation Selector -->
+        Operation Selector
         <select id="operation" aria-label="Select operation">
             <option value="add">Addition (+)</option>
             <option value="subtract">Subtraction (-)</option>
@@ -47,16 +48,16 @@
             <option value="power">Power (xʸ)</option>
         </select>
 
-        <!-- Action Buttons -->
+        Action Buttons
         <div class="button-container">
             <button onclick="calculate()" aria-label="Calculate result">Calculate</button>
             <button onclick="clearAll()" class="clear-all-btn" aria-label="Clear all inputs">Clear All</button>
         </div>
 
-        <!-- Result Display -->
+        Result Display
         <div class="result" id="result" aria-live="polite">Result will appear here</div>
 
-        <!-- History Section -->
+        History Section
         <section class="history" id="history">
             <div class="history-header">
                 <h2>History:</h2>
@@ -65,13 +66,14 @@
         </section>
     </main>
 
-    <!-- JavaScript -->
+    JavaScript
     <script src="assets/js/script.js"></script>
 </body>
 </html>
 
 
 
+ -->
 
 
 
@@ -91,8 +93,7 @@
 
 
 
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -490,7 +491,7 @@
 </head>
 <body>
 
-Glitch Effect Name Button
+<!-- Glitch Effect Name Button -->
 
 <a class="btn-glitch-fill" href="javascript:void(0)">
     <span class="text">Subburathinam Calculator</span>
@@ -557,11 +558,29 @@ Glitch Effect Name Button
     }
 }
 
+function getOperationSymbol(operation) {
+    return {
+        add: "+",
+        sub: "-",
+        mul: "×",
+        div: "÷",
+        perc: "%",
+        square: "Square of",
+        sqrt: "√",
+        pow: "^"
+    }[operation] || operation;
+}
+
 function saveHistory(num1, num2, operation, result) {
     let historyDiv = document.getElementById('history');
     let entry = document.createElement('div');
     entry.className = "history-entry";
-    entry.textContent = `${num1} ${operation} ${num2} = ${result}`;
+    if (operation === 'square' || operation === 'sqrt') {
+        entry.textContent = `${getOperationSymbol(operation)} ${num1} = ${result}`;
+    } else {
+        entry.textContent = `${num1} ${getOperationSymbol(operation)} ${num2 || 0} = ${result}`;
+    }
+    // entry.textContent = `${num1} ${operation} ${num2} = ${result}`;
     historyDiv.appendChild(entry);
 }
 
@@ -580,4 +599,4 @@ function clearAll() {
 }
 </script>
 </body>
-</html> -->
+</html> 
