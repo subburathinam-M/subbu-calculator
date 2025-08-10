@@ -48,9 +48,7 @@ A modern, smart calculator project built with **Java Spring Boot** backend and a
    ```bash
    git clone https://github.com/subburathinam-M/subbu-calculator.git
    cd subbu-calculator
-
-
-
+   ```
 ## Build and Run Spring Boot Backend
  
  ```bash
@@ -62,7 +60,7 @@ Backend runs on default port 8080
 API endpoint example:
 http://localhost:8080/api/calculate?num1=5&num2=10&operation=add
 
-Running Frontend Locally
+## Running Frontend Locally
 Open the index.html file in your browser.
 
 Make sure the API endpoint in your JavaScript points to your local backend URL (http://localhost:8080/api/calculate).
@@ -76,14 +74,18 @@ Deploy Spring Boot backend to Heroku, AWS, or any cloud provider.
 
 Update frontend API URLs to your deployed backend URL.
 
+## images
+
+![Calculator UI](images/favorite.ioc)
+
 ### Usage
 Enter numbers and select the operation.
 
 Click Calculate to see the result.
 
-History of calculations is shown below.
+The history of calculations is shown below.
 
-Use Clear All to reset inputs and result.
+Use Clear All to reset the inputs and result.
 
 Use Clear History to clear previous calculations.
 
