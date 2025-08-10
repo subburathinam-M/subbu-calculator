@@ -76,7 +76,7 @@ Update frontend API URLs to your deployed backend URL.
 
 ## images
 
-![Calculator UI](images/favorite.ioc)
+![Calculator UI](images/favicon.ico)
 
 ### Usage
 Enter numbers and select the operation.
