@@ -57,6 +57,7 @@ A modern, smart calculator project built with **Java Spring Boot** backend and a
 ./mvnw clean package
 java -jar target/WebCalculator-0.0.1-SNAPSHOT.jar
 Backend runs on default port 8080
+```
 
 API endpoint example:
 http://localhost:8080/api/calculate?num1=5&num2=10&operation=add
@@ -75,7 +76,7 @@ Deploy Spring Boot backend to Heroku, AWS, or any cloud provider.
 
 Update frontend API URLs to your deployed backend URL.
 
-###Usage
+### Usage
 Enter numbers and select the operation.
 
 Click Calculate to see the result.
@@ -90,10 +91,10 @@ Contributing
 Contributions are welcome!
 Please open issues or pull requests to improve the project.
 
-License
+## License
 MIT License © Subburathinam M
 
-Contact
+## Contact
 GitHub: https://github.com/subburathinam-M
 
 Email: your-email@example.com
